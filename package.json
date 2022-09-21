@@ -6,8 +6,8 @@
   "description": "Starter repository for typescript project",
   "devDependencies": {
     "@types/jest": "^29.0.3",
-    "@typescript-eslint/eslint-plugin": "^4.14.0",
-    "@typescript-eslint/parser": "^5.37.0",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
     "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
@@ -41,7 +41,7 @@
     "prepare": "yarn build",
     "prepublishOnly": "yarn test && yarn lint",
     "preversion": "yarn lint",
-    "test": "jest --config jestconfig.json",
+    "test": "jest --passWithNoTests --config jestconfig.json",
     "version": "yarn format && git add -A src"
   },
   "types": "lib/src/index.d.ts",
