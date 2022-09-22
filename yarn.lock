@@ -1870,10 +1870,10 @@ fsevents@^2.3.2:
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
 
-fulltype-api@^0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/fulltype-api/-/fulltype-api-0.0.8.tgz#fffd101bf1f59bdc060a93155b4736c0c45c4ba4"
-  integrity sha512-tkl3+pc4pJO3o7IKBpOzeTcoN4jhriJutk3N0t90PcE9fEssrXnANTwl17qj3rIXpdOKJoiM6ZAB02NUORBWKg==
+fulltype-api@^0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/fulltype-api/-/fulltype-api-0.0.10.tgz#c424a90cea9b02e94c12da6037e8244aa1d13eba"
+  integrity sha512-AWi1zqnKTPPincn/WdEKEq3h120D22yA7lYLNP1ISkniDGtrBmzwfIwedqxFtJL0LyRRtReSs12+zGOk9w3k+Q==
   dependencies:
     fulltype "^0.0.11"
 

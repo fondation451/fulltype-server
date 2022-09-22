@@ -12,22 +12,22 @@ type Controller<ApiEndpointT extends ftApi.ApiEndpoint> = ({
 
 export const buildApiServer = <ApiSchemaT extends ftApi.ApiSchema>({
   app,
-  apiBaseUrl,
-  apiSchema,
+  api,
   controllers,
 }: {
   app: Express;
-  apiBaseUrl: string;
-  apiSchema: ApiSchemaT;
+  api: ftApi.Api<ApiSchemaT>;
   controllers: {
     [routeName in keyof ApiSchemaT]: Controller<ApiSchemaT[routeName]>;
   };
 }): void => {
-  for (const routeName in apiSchema) {
-    const apiEndpoint = apiSchema[routeName];
+  const schema = api.schema;
+
+  for (const routeName in schema) {
+    const apiEndpoint = schema[routeName];
     const controller = controllers[routeName];
 
-    app.post(`${apiBaseUrl}/${routeName}`, async (req: any, res: any, next: any) => {
+    app.post(`${api.baseUrl}/${routeName}`, async (req: any, res: any, next: any) => {
       try {
         const output = await controller({
           headers: req.headers,
