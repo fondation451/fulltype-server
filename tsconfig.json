@@ -3,7 +3,7 @@
     "declaration": true,
     "isolatedModules": true,
     "module": "commonjs",
-    "outDir": "./dist",
+    "outDir": "./lib",
     "strict": true,
     "target": "es5",
     "noUncheckedIndexedAccess": true
