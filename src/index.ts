@@ -1,3 +1,3 @@
-import { buildApi } from "./buildApi";
+import { buildApiServer } from "./buildApiServer";
 
-export { buildApi };
+export { buildApiServer };

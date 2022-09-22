@@ -10,7 +10,7 @@ type Controller<ApiEndpointT extends ftApi.ApiEndpoint> = ({
   args: ft.TypeOf<ApiEndpointT["input"]>;
 }) => ft.TypeOf<ApiEndpointT["output"]>;
 
-export const buildApi = <ApiSchemaT extends ftApi.ApiSchema>({
+export const buildApiServer = <ApiSchemaT extends ftApi.ApiSchema>({
   app,
   apiBaseUrl,
   apiSchema,
